@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E9A9D949C587F731961F54A /* Pods_BLEareaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D626A5D72BED10E2D9F1E4 /* Pods_BLEareaTests.framework */; };
+		5F9A373FDD86197A5775212A /* Pods_BLEarea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1693FA6A14E0B05086644C /* Pods_BLEarea.framework */; };
+		7E1C9785EC4780674DC97900 /* Pods_BLEareaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B622D10D8A752713E1B6A023 /* Pods_BLEareaUITests.framework */; };
+		9B643693238C3E3E00C6F8EC /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B643692238C3E3E00C6F8EC /* Enum.swift */; };
+		9BA7988A238B14380029687D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79889238B14380029687D /* AppDelegate.swift */; };
+		9BA7988C238B14380029687D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7988B238B14380029687D /* SceneDelegate.swift */; };
+		9BA7988E238B14380029687D /* BLEDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7988D238B14380029687D /* BLEDevicesViewController.swift */; };
+		9BA79891238B14380029687D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7988F238B14380029687D /* Main.storyboard */; };
+		9BA79893238B143A0029687D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA79892238B143A0029687D /* Assets.xcassets */; };
+		9BA79896238B143A0029687D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA79894238B143A0029687D /* LaunchScreen.storyboard */; };
+		9BA798A1238B143B0029687D /* BLEareaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798A0238B143B0029687D /* BLEareaTests.swift */; };
+		9BA798AC238B143B0029687D /* BLEareaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798AB238B143B0029687D /* BLEareaUITests.swift */; };
+		9BA798C0238B17540029687D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798BF238B17540029687D /* Device.swift */; };
+		9BA798C3238B17C60029687D /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798C2238B17C60029687D /* BLEManager.swift */; };
+		9BA798C5238B1B4D0029687D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798C4238B1B4D0029687D /* Extensions.swift */; };
+		9BA798C7238BC0F00029687D /* BLEDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA798C6238BC0F00029687D /* BLEDeviceTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BA7989D238B143B0029687D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA7987E238B14370029687D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA79885238B14370029687D;
+			remoteInfo = BLEarea;
+		};
+		9BA798A8238B143B0029687D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA7987E238B14370029687D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA79885238B14370029687D;
+			remoteInfo = BLEarea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D1693FA6A14E0B05086644C /* Pods_BLEarea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEarea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D626A5D72BED10E2D9F1E4 /* Pods_BLEareaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEareaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEE41865179653BC6E3BE2C /* Pods-BLEarea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEarea.debug.xcconfig"; path = "Target Support Files/Pods-BLEarea/Pods-BLEarea.debug.xcconfig"; sourceTree = "<group>"; };
+		43BEEB2DE1B40519EB5C2D63 /* Pods-BLEareaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEareaTests.debug.xcconfig"; path = "Target Support Files/Pods-BLEareaTests/Pods-BLEareaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C181E88593EAAEE04536B1E /* Pods-BLEareaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEareaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BLEareaUITests/Pods-BLEareaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B643692238C3E3E00C6F8EC /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		9BA79886238B14370029687D /* BLEarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA79889238B14380029687D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BA7988B238B14380029687D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BA7988D238B14380029687D /* BLEDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesViewController.swift; sourceTree = "<group>"; };
+		9BA79890238B14380029687D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BA79892238B143A0029687D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BA79895238B143A0029687D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BA79897238B143B0029687D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA7989C238B143B0029687D /* BLEareaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEareaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA798A0238B143B0029687D /* BLEareaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEareaTests.swift; sourceTree = "<group>"; };
+		9BA798A2238B143B0029687D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA798A7238B143B0029687D /* BLEareaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEareaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA798AB238B143B0029687D /* BLEareaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEareaUITests.swift; sourceTree = "<group>"; };
+		9BA798AD238B143B0029687D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA798BF238B17540029687D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		9BA798C2238B17C60029687D /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		9BA798C4238B1B4D0029687D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BA798C6238BC0F00029687D /* BLEDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		A6E4B384599E45E70B1E7739 /* Pods-BLEarea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEarea.release.xcconfig"; path = "Target Support Files/Pods-BLEarea/Pods-BLEarea.release.xcconfig"; sourceTree = "<group>"; };
+		B622D10D8A752713E1B6A023 /* Pods_BLEareaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEareaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE640EF49B1B36D06AE9D76 /* Pods-BLEareaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEareaTests.release.xcconfig"; path = "Target Support Files/Pods-BLEareaTests/Pods-BLEareaTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC1C789A1783272AF49EFEB9 /* Pods-BLEareaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEareaUITests.release.xcconfig"; path = "Target Support Files/Pods-BLEareaUITests/Pods-BLEareaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BA79883238B14370029687D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9A373FDD86197A5775212A /* Pods_BLEarea.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA79899238B143B0029687D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9A9D949C587F731961F54A /* Pods_BLEareaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA798A4238B143B0029687D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1C9785EC4780674DC97900 /* Pods_BLEareaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B643691238C3E2100C6F8EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798C4238B1B4D0029687D /* Extensions.swift */,
+				9B643692238C3E3E00C6F8EC /* Enum.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9BA7987D238B14370029687D = {
+			isa = PBXGroup;
+			children = (
+				9BA79888238B14370029687D /* BLEarea */,
+				9BA7989F238B143B0029687D /* BLEareaTests */,
+				9BA798AA238B143B0029687D /* BLEareaUITests */,
+				9BA79887238B14370029687D /* Products */,
+				C26CF1C3B5B007E151D24062 /* Pods */,
+				E90562DFAFDC5840BD44E6EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BA79887238B14370029687D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA79886238B14370029687D /* BLEarea.app */,
+				9BA7989C238B143B0029687D /* BLEareaTests.xctest */,
+				9BA798A7238B143B0029687D /* BLEareaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BA79888238B14370029687D /* BLEarea */ = {
+			isa = PBXGroup;
+			children = (
+				9B643691238C3E2100C6F8EC /* Utils */,
+				9BA798C1238B17AB0029687D /* Managers */,
+				9BA798BA238B149B0029687D /* Main */,
+				9BA798BC238B14F60029687D /* Models */,
+				9BA798BD238B15010029687D /* Views */,
+				9BA798BE238B150A0029687D /* Controllers */,
+				9BA798BB238B14D70029687D /* Supporting Files */,
+				9BA798B9238B14870029687D /* Resources */,
+			);
+			path = BLEarea;
+			sourceTree = "<group>";
+		};
+		9BA7989F238B143B0029687D /* BLEareaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798A0238B143B0029687D /* BLEareaTests.swift */,
+				9BA798A2238B143B0029687D /* Info.plist */,
+			);
+			path = BLEareaTests;
+			sourceTree = "<group>";
+		};
+		9BA798AA238B143B0029687D /* BLEareaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798AB238B143B0029687D /* BLEareaUITests.swift */,
+				9BA798AD238B143B0029687D /* Info.plist */,
+			);
+			path = BLEareaUITests;
+			sourceTree = "<group>";
+		};
+		9BA798B9238B14870029687D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BA7988F238B14380029687D /* Main.storyboard */,
+				9BA79892238B143A0029687D /* Assets.xcassets */,
+				9BA79894238B143A0029687D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9BA798BA238B149B0029687D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9BA79889238B14380029687D /* AppDelegate.swift */,
+				9BA7988B238B14380029687D /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9BA798BB238B14D70029687D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA79897238B143B0029687D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BA798BC238B14F60029687D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798BF238B17540029687D /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9BA798BD238B15010029687D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798C6238BC0F00029687D /* BLEDeviceTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9BA798BE238B150A0029687D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BA7988D238B14380029687D /* BLEDevicesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9BA798C1238B17AB0029687D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9BA798C2238B17C60029687D /* BLEManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C26CF1C3B5B007E151D24062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE41865179653BC6E3BE2C /* Pods-BLEarea.debug.xcconfig */,
+				A6E4B384599E45E70B1E7739 /* Pods-BLEarea.release.xcconfig */,
+				43BEEB2DE1B40519EB5C2D63 /* Pods-BLEareaTests.debug.xcconfig */,
+				CAE640EF49B1B36D06AE9D76 /* Pods-BLEareaTests.release.xcconfig */,
+				4C181E88593EAAEE04536B1E /* Pods-BLEareaUITests.debug.xcconfig */,
+				DC1C789A1783272AF49EFEB9 /* Pods-BLEareaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E90562DFAFDC5840BD44E6EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D1693FA6A14E0B05086644C /* Pods_BLEarea.framework */,
+				16D626A5D72BED10E2D9F1E4 /* Pods_BLEareaTests.framework */,
+				B622D10D8A752713E1B6A023 /* Pods_BLEareaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BA79885238B14370029687D /* BLEarea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA798B0238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEarea" */;
+			buildPhases = (
+				08D3AD7F3DE750DB2DBB9126 /* [CP] Check Pods Manifest.lock */,
+				9BA79882238B14370029687D /* Sources */,
+				9BA79883238B14370029687D /* Frameworks */,
+				9BA79884238B14370029687D /* Resources */,
+				458734CC866127B508C78C61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEarea;
+			productName = BLEarea;
+			productReference = 9BA79886238B14370029687D /* BLEarea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BA7989B238B143B0029687D /* BLEareaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA798B3238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEareaTests" */;
+			buildPhases = (
+				F90EFC687B568F5FA61F1632 /* [CP] Check Pods Manifest.lock */,
+				9BA79898238B143B0029687D /* Sources */,
+				9BA79899238B143B0029687D /* Frameworks */,
+				9BA7989A238B143B0029687D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA7989E238B143B0029687D /* PBXTargetDependency */,
+			);
+			name = BLEareaTests;
+			productName = BLEareaTests;
+			productReference = 9BA7989C238B143B0029687D /* BLEareaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BA798A6238B143B0029687D /* BLEareaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA798B6238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEareaUITests" */;
+			buildPhases = (
+				9CC1D3C3D643555F3A84E912 /* [CP] Check Pods Manifest.lock */,
+				9BA798A3238B143B0029687D /* Sources */,
+				9BA798A4238B143B0029687D /* Frameworks */,
+				9BA798A5238B143B0029687D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA798A9238B143B0029687D /* PBXTargetDependency */,
+			);
+			name = BLEareaUITests;
+			productName = BLEareaUITests;
+			productReference = 9BA798A7238B143B0029687D /* BLEareaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BA7987E238B14370029687D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Levi;
+				TargetAttributes = {
+					9BA79885238B14370029687D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					9BA7989B238B143B0029687D = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 9BA79885238B14370029687D;
+					};
+					9BA798A6238B143B0029687D = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 9BA79885238B14370029687D;
+					};
+				};
+			};
+			buildConfigurationList = 9BA79881238B14370029687D /* Build configuration list for PBXProject "BLEarea" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BA7987D238B14370029687D;
+			productRefGroup = 9BA79887238B14370029687D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BA79885238B14370029687D /* BLEarea */,
+				9BA7989B238B143B0029687D /* BLEareaTests */,
+				9BA798A6238B143B0029687D /* BLEareaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BA79884238B14370029687D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA79896238B143A0029687D /* LaunchScreen.storyboard in Resources */,
+				9BA79893238B143A0029687D /* Assets.xcassets in Resources */,
+				9BA79891238B14380029687D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA7989A238B143B0029687D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA798A5238B143B0029687D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D3AD7F3DE750DB2DBB9126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEarea-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458734CC866127B508C78C61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BLEarea/Pods-BLEarea-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BLEarea/Pods-BLEarea-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BLEarea/Pods-BLEarea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC1D3C3D643555F3A84E912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEareaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90EFC687B568F5FA61F1632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEareaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BA79882238B14370029687D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA7988E238B14380029687D /* BLEDevicesViewController.swift in Sources */,
+				9BA798C5238B1B4D0029687D /* Extensions.swift in Sources */,
+				9B643693238C3E3E00C6F8EC /* Enum.swift in Sources */,
+				9BA7988A238B14380029687D /* AppDelegate.swift in Sources */,
+				9BA798C3238B17C60029687D /* BLEManager.swift in Sources */,
+				9BA7988C238B14380029687D /* SceneDelegate.swift in Sources */,
+				9BA798C7238BC0F00029687D /* BLEDeviceTableViewCell.swift in Sources */,
+				9BA798C0238B17540029687D /* Device.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA79898238B143B0029687D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA798A1238B143B0029687D /* BLEareaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA798A3238B143B0029687D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA798AC238B143B0029687D /* BLEareaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BA7989E238B143B0029687D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA79885238B14370029687D /* BLEarea */;
+			targetProxy = 9BA7989D238B143B0029687D /* PBXContainerItemProxy */;
+		};
+		9BA798A9238B143B0029687D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA79885238B14370029687D /* BLEarea */;
+			targetProxy = 9BA798A8238B143B0029687D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BA7988F238B14380029687D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA79890238B14380029687D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BA79894238B143A0029687D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BA79895238B143A0029687D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BA798AE238B143B0029687D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BA798AF238B143B0029687D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BA798B1238B143B0029687D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEE41865179653BC6E3BE2C /* Pods-BLEarea.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = "$(SRCROOT)/BLEarea/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEarea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BA798B2238B143B0029687D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E4B384599E45E70B1E7739 /* Pods-BLEarea.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = "$(SRCROOT)/BLEarea/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEarea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BA798B4238B143B0029687D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43BEEB2DE1B40519EB5C2D63 /* Pods-BLEareaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = BLEareaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEareaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEarea.app/BLEarea";
+			};
+			name = Debug;
+		};
+		9BA798B5238B143B0029687D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE640EF49B1B36D06AE9D76 /* Pods-BLEareaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = BLEareaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEareaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEarea.app/BLEarea";
+			};
+			name = Release;
+		};
+		9BA798B7238B143B0029687D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C181E88593EAAEE04536B1E /* Pods-BLEareaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = BLEareaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEareaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEarea;
+			};
+			name = Debug;
+		};
+		9BA798B8238B143B0029687D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1C789A1783272AF49EFEB9 /* Pods-BLEareaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66V968A29X;
+				INFOPLIST_FILE = BLEareaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tamar.BLEareaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEarea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BA79881238B14370029687D /* Build configuration list for PBXProject "BLEarea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA798AE238B143B0029687D /* Debug */,
+				9BA798AF238B143B0029687D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA798B0238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEarea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA798B1238B143B0029687D /* Debug */,
+				9BA798B2238B143B0029687D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA798B3238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEareaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA798B4238B143B0029687D /* Debug */,
+				9BA798B5238B143B0029687D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA798B6238B143B0029687D /* Build configuration list for PBXNativeTarget "BLEareaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA798B7238B143B0029687D /* Debug */,
+				9BA798B8238B143B0029687D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BA7987E238B14370029687D /* Project object */;
+}
